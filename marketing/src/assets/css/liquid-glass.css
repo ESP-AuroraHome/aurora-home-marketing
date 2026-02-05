@@ -1,0 +1,26 @@
+/* Glass Container Styles */
+.glass-container {
+  position: relative;
+  /* display: flex;  -- We rely on Vue to control layout (e.g. inline-block or whatever class user adds) */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* gap: 20px; */
+  /* padding: 10px; */
+  /* box-sizing: border-box; */
+}
+
+/* Ensure canvas is behind */
+.glass-container canvas {
+    pointer-events: none;
+}
+
+.glass-container-circle {
+  aspect-ratio: 1 / 1;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+.glass-container-pill {
+  flex-shrink: 0;
+  flex-grow: 0;
+}
