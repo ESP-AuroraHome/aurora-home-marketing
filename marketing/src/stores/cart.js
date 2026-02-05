@@ -17,14 +17,29 @@ export const store = reactive({
     },
 
     addToCart(product = null) {
-        // Default product if none provided (for simplicity based on current app)
-        const itemToAdd = product || {
+        // Default product if none provided
+        const template = product || {
             id: 1,
             name: 'Aurora One',
             price: 89.00
         };
 
-        this.cart.push(itemToAdd);
+        const existingItem = this.cart.find(item => item.id === template.id);
+
+        if (existingItem) {
+            existingItem.quantity += 1;
+        } else {
+            this.cart.push({ ...template, quantity: 1 });
+        }
+    },
+
+    decreaseQuantity(index) {
+        const item = this.cart[index];
+        if (item.quantity > 1) {
+            item.quantity -= 1;
+        } else {
+            this.cart.splice(index, 1);
+        }
     },
 
     removeFromCart(index) {
@@ -32,11 +47,11 @@ export const store = reactive({
     },
 
     get cartTotal() {
-        return this.cart.reduce((acc, item) => acc + item.price, 0).toFixed(2);
+        return this.cart.reduce((acc, item) => acc + (item.price * item.quantity), 0).toFixed(2);
     },
 
     get cartCount() {
-        return this.cart.length;
+        return this.cart.reduce((acc, item) => acc + item.quantity, 0);
     },
 
     clearCart() {

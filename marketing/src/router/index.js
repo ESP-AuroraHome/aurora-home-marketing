@@ -4,6 +4,7 @@ import ProductView from '../views/ProductView.vue';
 import AboutView from '../views/AboutView.vue';
 import DocsView from '../views/DocsView.vue';
 import CartView from '../views/CartView.vue';
+import ConfirmationView from '../views/ConfirmationView.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -52,6 +53,16 @@ const router = createRouter({
     {
         path: '/pages/cart.html',
         redirect: '/cart'
+    },
+    {
+      path: '/confirmation',
+      name: 'confirmation',
+      component: ConfirmationView
+    },
+    {
+      path: '/admin',
+      name: 'admin',
+      component: () => import('../views/AdminView.vue')
     }
   ],
   scrollBehavior(to, from, savedPosition) {
