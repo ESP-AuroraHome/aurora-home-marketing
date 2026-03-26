@@ -10,11 +10,14 @@
         <router-link to="/about" class="hover:text-stone-900"
           >Mentions Légales</router-link
         >
-        <router-link to="/docs" class="hover:text-stone-900"
-          >Support</router-link
+        <a
+          href="https://aurora-home-documentation.vercel.app/fr/docs"
+          target="_blank"
+          class="hover:text-stone-900"
+          >Support</a
         >
         <a
-          href="https://github.com/EpitechMscProPromo2026/T-ESP-901-81613-REN_AuroraHome"
+          href="https://github.com/ESP-AuroraHome"
           target="_blank"
           class="hover:text-stone-900"
           >GitHub</a

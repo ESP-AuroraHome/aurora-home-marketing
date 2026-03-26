@@ -59,11 +59,11 @@
             >Le Boîtier</router-link
           >
 
-          <router-link
-            to="/docs"
-            active-class="text-stone-900"
+          <a
+            href="https://aurora-home-documentation.vercel.app/fr/docs"
+            target="_blank"
             class="hover:text-stone-900 transition-colors"
-            >Documentation</router-link
+            >Documentation</a
           >
 
           <router-link

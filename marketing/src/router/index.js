@@ -2,7 +2,6 @@ import { createRouter, createWebHistory } from 'vue-router';
 import HomeView from '../views/HomeView.vue';
 import ProductView from '../views/ProductView.vue';
 import AboutView from '../views/AboutView.vue';
-import DocsView from '../views/DocsView.vue';
 import CartView from '../views/CartView.vue';
 import ConfirmationView from '../views/ConfirmationView.vue';
 
@@ -37,13 +36,12 @@ const router = createRouter({
         redirect: '/about'
     },
     {
-      path: '/docs',
-      name: 'docs',
-      component: DocsView
+        path: '/docs',
+        beforeEnter() { window.location.href = 'https://aurora-home-documentation.vercel.app/fr/docs'; }
     },
     {
         path: '/pages/docs.html',
-        redirect: '/docs'
+        beforeEnter() { window.location.href = 'https://aurora-home-documentation.vercel.app/fr/docs'; }
     },
     {
       path: '/cart',

@@ -28,12 +28,13 @@
           >
             Découvrir Aurora (89€)
           </router-link>
-          <router-link
-            to="/docs"
+          <a
+            href="https://aurora-home-documentation.vercel.app/fr/docs"
+            target="_blank"
             class="px-8 py-3 rounded-xl glass-button text-stone-800 font-medium hover-lift"
           >
             Documentation
-          </router-link>
+          </a>
         </div>
 
         <!-- Abstract Visual Representation -->
