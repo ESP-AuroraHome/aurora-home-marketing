@@ -24,6 +24,8 @@ export default defineNuxtConfig({
         'three/examples/jsm/loaders/OBJLoader.js',
         'three/examples/jsm/controls/OrbitControls.js',
         'three/examples/jsm/exporters/GLTFExporter.js',
+        '@vue/devtools-core',
+        '@vue/devtools-kit',
       ],
     },
   },
