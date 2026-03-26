@@ -1,4 +1,14 @@
 node_modules
-package-lock.json
-.env.local
 .env
+.env.local
+.env.*.local
+.nuxt
+.output
+.data
+dist
+*.db
+*.db-shm
+*.db-wal
+.idea
+.DS_Store
+.claude
