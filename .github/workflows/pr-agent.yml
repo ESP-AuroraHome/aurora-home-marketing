@@ -43,6 +43,7 @@ jobs:
           FILES: ${{ steps.diff.outputs.files }}
           COMMITS: ${{ steps.diff.outputs.commits }}
           PR_TITLE: ${{ github.event.pull_request.title }}
+          GH_MODELS_TOKEN: ${{ secrets.GH_MODELS_TOKEN }}
         with:
           script: |
             const prompt = `You are a helpful assistant that writes clear and concise GitHub pull request descriptions in English.
@@ -74,7 +75,7 @@ jobs:
               method: "POST",
               headers: {
                 "Content-Type": "application/json",
-                "Authorization": `Bearer ${context.token}`,
+                "Authorization": `Bearer ${process.env.GH_MODELS_TOKEN}`,
               },
               body: JSON.stringify({
                 model: "gpt-4o-mini",
