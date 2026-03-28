@@ -1,0 +1,26 @@
+language: "en"
+reviews:
+  profile: "chill"
+  request_changes_workflow: false
+  high_level_summary: true
+  poem: false
+  review_status: true
+  collapse_walkthrough: false
+  auto_review:
+    enabled: true
+    drafts: false
+  path_filters:
+    - "!**/*.lock"
+    - "!**/node_modules/**"
+    - "!aurora.db"
+  path_instructions:
+    - path: "**/*.test.ts"
+      instructions: "Check that mocks are realistic, edge cases are covered, and no implementation details leak into tests."
+    - path: "components/**/*.vue"
+      instructions: "Check accessibility (aria, role), loading/error state handling, and that props are properly typed."
+    - path: "server/api/**/*.ts"
+      instructions: "Check input validation, HTTP status codes, error handling, and that no sensitive data is returned."
+    - path: "stores/**/*.ts"
+      instructions: "Check state mutations, action error handling, and getter correctness."
+chat:
+  auto_reply: true
