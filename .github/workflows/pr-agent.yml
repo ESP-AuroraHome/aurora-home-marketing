@@ -45,8 +45,6 @@ jobs:
           PR_TITLE: ${{ github.event.pull_request.title }}
         with:
           script: |
-            const { Octokit } = await import("@octokit/core")
-
             const prompt = `You are a helpful assistant that writes clear and concise GitHub pull request descriptions in English.
 
             PR Title: ${process.env.PR_TITLE}
