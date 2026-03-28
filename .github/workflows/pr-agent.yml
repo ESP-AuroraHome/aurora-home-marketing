@@ -47,7 +47,7 @@ jobs:
           script: |
             const { Octokit } = await import("@octokit/core")
 
-            const prompt = `You are a helpful assistant that writes clear and concise GitHub pull request descriptions in French.
+            const prompt = `You are a helpful assistant that writes clear and concise GitHub pull request descriptions in English.
 
             PR Title: ${process.env.PR_TITLE}
 
@@ -60,14 +60,14 @@ jobs:
             Diff summary:
             ${process.env.DIFF_STAT}
 
-            Write a PR description in French with these sections:
-            ## Résumé
+            Write a PR description in English with these sections:
+            ## Summary
             (2-4 bullet points describing what changed and why)
 
-            ## Type de changement
-            (one of: ✨ Nouvelle fonctionnalité / 🐛 Correction de bug / ♻️ Refactoring / 🧪 Tests / 📦 Configuration)
+            ## Type of change
+            (one of: ✨ New feature / 🐛 Bug fix / ♻️ Refactoring / 🧪 Tests / 📦 Configuration)
 
-            ## Plan de test
+            ## Test plan
             (2-3 bullet points on how to verify the changes)
 
             Be concise. Do not add extra sections.`
