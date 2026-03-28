@@ -18,5 +18,6 @@ jobs:
           node-version: 20
           cache: "npm"
       - run: npm ci
+      - run: npx nuxt prepare
       - run: npx eslint .
       - run: npx nuxt typecheck

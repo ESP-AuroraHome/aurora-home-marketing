@@ -20,6 +20,7 @@ jobs:
           node-version: 20
           cache: "npm"
       - run: npm ci
+      - run: npx nuxt prepare
 
       - name: Run tests with coverage
         run: npx vitest run --coverage
