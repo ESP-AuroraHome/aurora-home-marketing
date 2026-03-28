@@ -5,12 +5,12 @@
         <div
           class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-stone-200 bg-white/40 text-xs font-medium text-stone-500 uppercase tracking-wider backdrop-blur-sm"
         >
-          <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"/>
+          <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
           En stock
         </div>
 
         <h1 class="text-5xl md:text-7xl font-light tracking-tight text-stone-800">
-          L'harmonie invisible <br >
+          L'harmonie invisible <br />
           de votre <span class="text-gradient font-normal">intérieur</span>.
         </h1>
 
@@ -44,15 +44,15 @@
               :src="'/aurora-bg.png'"
               alt=""
               class="w-full h-full object-cover opacity-80 animate-aurora-slow"
-            >
-            <div class="absolute inset-0 bg-white/10 backdrop-blur-[1px]"/>
+            />
+            <div class="absolute inset-0 bg-white/10 backdrop-blur-[1px]" />
           </div>
 
           <div class="absolute z-20 text-center select-none parallax-item" data-speed="0.05">
             <LiquidGlass
               class="p-6 md:p-8 rounded-[2rem] inline-block backdrop-blur-md border border-white/60 shadow-lg animate-float bg-white/40"
             >
-              <i class="ph ph-plant text-3xl md:text-4xl text-green-600 mb-2 md:mb-4 block"/>
+              <i class="ph ph-plant text-3xl md:text-4xl text-green-600 mb-2 md:mb-4 block" />
               <div class="text-4xl md:text-5xl font-light text-stone-800">
                 420 <span class="text-base md:text-lg text-stone-500">ppm</span>
               </div>
@@ -69,7 +69,9 @@
             <LiquidGlass
               class="p-4 md:p-6 rounded-[1.5rem] inline-block backdrop-blur-sm border border-white/40 shadow-md scale-90 md:scale-100 opacity-90 animate-float delay-1000 bg-white/40"
             >
-              <i class="ph ph-thermometer text-2xl md:text-3xl text-orange-400 mb-1 md:mb-2 block"/>
+              <i
+                class="ph ph-thermometer text-2xl md:text-3xl text-orange-400 mb-1 md:mb-2 block"
+              />
               <div class="text-xl md:text-3xl font-light text-stone-800">21.5°</div>
             </LiquidGlass>
           </div>
@@ -81,7 +83,7 @@
             <LiquidGlass
               class="p-4 md:p-6 rounded-[1.5rem] inline-block backdrop-blur-sm border border-white/40 shadow-md scale-90 md:scale-100 opacity-90 animate-float delay-2000 bg-white/40"
             >
-              <i class="ph ph-drop text-2xl md:text-3xl text-blue-400 mb-1 md:mb-2 block"/>
+              <i class="ph ph-drop text-2xl md:text-3xl text-blue-400 mb-1 md:mb-2 block" />
               <div class="text-xl md:text-3xl font-light text-stone-800">45%</div>
             </LiquidGlass>
           </div>
@@ -93,7 +95,7 @@
             <LiquidGlass
               class="p-3 md:p-4 rounded-2xl inline-block backdrop-blur-sm border border-white/30 scale-75 md:scale-100 opacity-60 animate-float delay-1500 bg-white/30"
             >
-              <i class="ph ph-speaker-high text-xl md:text-2xl text-purple-400 mb-1 block"/>
+              <i class="ph ph-speaker-high text-xl md:text-2xl text-purple-400 mb-1 block" />
               <div class="text-lg md:text-xl font-light text-stone-800">35dB</div>
             </LiquidGlass>
           </div>
@@ -105,7 +107,7 @@
             <LiquidGlass
               class="p-3 md:p-4 rounded-2xl inline-block backdrop-blur-sm border border-white/30 scale-75 md:scale-100 opacity-60 animate-float delay-2500 bg-white/30"
             >
-              <i class="ph ph-sun text-xl md:text-2xl text-yellow-400 mb-1 block"/>
+              <i class="ph ph-sun text-xl md:text-2xl text-yellow-400 mb-1 block" />
               <div class="text-lg md:text-xl font-light text-stone-800">450lx</div>
             </LiquidGlass>
           </div>
@@ -126,7 +128,7 @@
           <div
             class="w-12 h-12 rounded-xl bg-stone-100 flex items-center justify-center mb-6 mx-auto md:mx-0"
           >
-            <i class="ph ph-eye-slash text-2xl text-stone-800"/>
+            <i class="ph ph-eye-slash text-2xl text-stone-800" />
           </div>
           <h3 class="text-lg font-semibold mb-2">Discret &amp; Élégant</h3>
           <p class="text-stone-500 text-sm leading-relaxed">
@@ -141,7 +143,7 @@
           <div
             class="w-12 h-12 rounded-xl bg-stone-100 flex items-center justify-center mb-6 mx-auto md:mx-0"
           >
-            <i class="ph ph-lock-open text-2xl text-stone-800"/>
+            <i class="ph ph-lock-open text-2xl text-stone-800" />
           </div>
           <h3 class="text-lg font-semibold mb-2">100% Open Source</h3>
           <p class="text-stone-500 text-sm leading-relaxed">
@@ -156,7 +158,7 @@
           <div
             class="w-12 h-12 rounded-xl bg-stone-100 flex items-center justify-center mb-6 mx-auto md:mx-0"
           >
-            <i class="ph ph-sliders text-2xl text-stone-800"/>
+            <i class="ph ph-sliders text-2xl text-stone-800" />
           </div>
           <h3 class="text-lg font-semibold mb-2">Plug &amp; Play</h3>
           <p class="text-stone-500 text-sm leading-relaxed">
@@ -184,7 +186,9 @@
                 </div>
                 <div>
                   <h4 class="font-medium text-stone-900">Déballez</h4>
-                  <p class="text-sm text-stone-500">Un packaging recyclable, sans plastique superflu.</p>
+                  <p class="text-sm text-stone-500">
+                    Un packaging recyclable, sans plastique superflu.
+                  </p>
                 </div>
               </div>
               <div class="flex gap-4">
@@ -195,7 +199,9 @@
                 </div>
                 <div>
                   <h4 class="font-medium text-stone-900">Branchez</h4>
-                  <p class="text-sm text-stone-500">USB-C standard. Compatible avec vos chargeurs existants.</p>
+                  <p class="text-sm text-stone-500">
+                    USB-C standard. Compatible avec vos chargeurs existants.
+                  </p>
                 </div>
               </div>
               <div class="flex gap-4">
@@ -206,7 +212,9 @@
                 </div>
                 <div>
                   <h4 class="font-medium text-stone-900">Respirez</h4>
-                  <p class="text-sm text-stone-500">L'app Aurora détecte automatiquement votre appareil.</p>
+                  <p class="text-sm text-stone-500">
+                    L'app Aurora détecte automatiquement votre appareil.
+                  </p>
                 </div>
               </div>
             </div>
@@ -218,7 +226,7 @@
               :src="'/images/app-detection.png'"
               alt="Application Aurora détectant l'appareil"
               class="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
-            >
+            />
           </div>
         </div>
       </div>
@@ -231,7 +239,9 @@
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         <div class="p-6 rounded-2xl bg-white border border-stone-100 shadow-sm">
           <div class="flex text-yellow-500 mb-3 text-sm">
-            <i class="ph-fill ph-star"/><i class="ph-fill ph-star"/><i class="ph-fill ph-star"/><i class="ph-fill ph-star"/><i class="ph-fill ph-star"/>
+            <i class="ph-fill ph-star" /><i class="ph-fill ph-star" /><i
+              class="ph-fill ph-star"
+            /><i class="ph-fill ph-star" /><i class="ph-fill ph-star" />
           </div>
           <p class="text-stone-600 text-sm mb-4">
             "Enfin un capteur qui n'est pas moche ! Il trône dans mon salon et tout le monde me
@@ -249,7 +259,9 @@
 
         <div class="p-6 rounded-2xl bg-white border border-stone-100 shadow-sm">
           <div class="flex text-yellow-500 mb-3 text-sm">
-            <i class="ph-fill ph-star"/><i class="ph-fill ph-star"/><i class="ph-fill ph-star"/><i class="ph-fill ph-star"/><i class="ph-fill ph-star"/>
+            <i class="ph-fill ph-star" /><i class="ph-fill ph-star" /><i
+              class="ph-fill ph-star"
+            /><i class="ph-fill ph-star" /><i class="ph-fill ph-star" />
           </div>
           <p class="text-stone-600 text-sm mb-4">
             "L'intégration HomeAssistant est native, rien à configurer. C'est exactement ce que je
@@ -267,7 +279,9 @@
 
         <div class="p-6 rounded-2xl bg-white border border-stone-100 shadow-sm hidden lg:block">
           <div class="flex text-yellow-500 mb-3 text-sm">
-            <i class="ph-fill ph-star"/><i class="ph-fill ph-star"/><i class="ph-fill ph-star"/><i class="ph-fill ph-star"/><i class="ph-fill ph-star"/>
+            <i class="ph-fill ph-star" /><i class="ph-fill ph-star" /><i
+              class="ph-fill ph-star"
+            /><i class="ph-fill ph-star" /><i class="ph-fill ph-star" />
           </div>
           <p class="text-stone-600 text-sm mb-4">
             "J'ai réalisé que mon bureau était mal ventilé. Depuis que je l'aère mieux, je suis plus
@@ -303,8 +317,8 @@
         <div class="glass-panel p-6 rounded-xl">
           <h3 class="font-medium text-stone-800 mb-2">Puis-je l'utiliser sans WiFi ?</h3>
           <p class="text-sm text-stone-500">
-            Oui, l'appareil indique la qualité de l'air via un anneau lumineux discret (configurable)
-            même sans connexion.
+            Oui, l'appareil indique la qualité de l'air via un anneau lumineux discret
+            (configurable) même sans connexion.
           </p>
         </div>
       </div>
@@ -313,10 +327,12 @@
     <section class="reveal-on-scroll">
       <div class="bg-stone-800 rounded-3xl p-12 text-center text-white relative overflow-hidden">
         <div class="absolute top-0 left-0 w-full h-full opacity-10">
-          <div class="absolute top-[-50%] left-[-20%] w-160 h-160 rounded-full bg-white blur-3xl"/>
+          <div class="absolute top-[-50%] left-[-20%] w-160 h-160 rounded-full bg-white blur-3xl" />
         </div>
         <div class="relative z-10 space-y-6">
-          <h2 class="text-3xl md:text-4xl font-light">Améliorez votre environnement dès aujourd'hui.</h2>
+          <h2 class="text-3xl md:text-4xl font-light">
+            Améliorez votre environnement dès aujourd'hui.
+          </h2>
           <p class="text-stone-300 max-w-lg mx-auto">
             Rejoignez les 500+ utilisateurs qui ont choisi la transparence et le design.
           </p>
@@ -328,7 +344,9 @@
               Commander Aurora (89€)
             </NuxtLink>
           </div>
-          <p class="text-xs text-stone-500 mt-4">Expédié sous 48h • Satisfait ou remboursé 30 jours</p>
+          <p class="text-xs text-stone-500 mt-4">
+            Expédié sous 48h • Satisfait ou remboursé 30 jours
+          </p>
         </div>
       </div>
     </section>
@@ -361,7 +379,7 @@ function initScrollReveal(): void {
         }
       })
     },
-    { threshold: 0.1, rootMargin: '0px 0px -50px 0px' },
+    { threshold: 0.1, rootMargin: '0px 0px -50px 0px' }
   )
 
   document.querySelectorAll('.reveal-on-scroll').forEach((el) => observer.observe(el))
@@ -374,7 +392,7 @@ function initScrollReveal(): void {
  * @returns A cleanup function that removes all event listeners and cancels animation frames.
  */
 function initParallax(): () => void {
-  const container = document.getElementById('hero-glass')
+  const container = document.getElementById('hero-glass') as HTMLElement
   if (!container) return () => {}
 
   interface ParallaxItem {
@@ -386,7 +404,9 @@ function initParallax(): () => void {
     baseY: number
   }
 
-  const items: ParallaxItem[] = Array.from(container.querySelectorAll<HTMLElement>('.parallax-item')).map((el) => ({
+  const items: ParallaxItem[] = Array.from(
+    container.querySelectorAll<HTMLElement>('.parallax-item')
+  ).map((el) => ({
     el,
     speed: parseFloat(el.dataset['speed'] ?? '0.05'),
     cx: 0,
