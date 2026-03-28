@@ -161,7 +161,11 @@ describe('pages/index.vue', () => {
   })
 
   it('initialises IntersectionObserver on mount', () => {
+    const fakeEl = document.createElement('div')
+    vi.spyOn(document, 'querySelectorAll').mockReturnValue([
+      fakeEl,
+    ] as unknown as NodeListOf<Element>)
     mountPage()
-    expect(mockObserve).toHaveBeenCalled()
+    expect(mockObserve).toHaveBeenCalledWith(fakeEl)
   })
 })
