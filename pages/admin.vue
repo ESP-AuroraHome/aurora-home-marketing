@@ -3,7 +3,7 @@
     <div class="flex justify-between items-center mb-8">
       <h1 class="text-3xl font-bold text-stone-800">Admin Dashboard</h1>
       <NuxtLink to="/" class="text-stone-500 hover:text-stone-800 flex items-center gap-2">
-        <i class="ph ph-house"/> Retour Site
+        <i class="ph ph-house" /> Retour Site
       </NuxtLink>
     </div>
 
@@ -12,7 +12,11 @@
         <h2 class="text-xl font-bold mb-4 text-stone-800">Ventes Récentes</h2>
         <div class="h-64 relative w-full">
           <ClientOnly>
-            <Bar v-if="chartData.labels.length > 0" :data="chartData" :options="chartOptions" />
+            <Bar
+              v-if="(chartData.labels?.length ?? 0) > 0"
+              :data="chartData"
+              :options="chartOptions"
+            />
             <div v-else class="flex items-center justify-center h-full text-stone-400">
               Aucune donnée de vente
             </div>
@@ -74,13 +78,13 @@
                     min="0"
                     class="w-20 p-2 rounded-lg border border-stone-200 text-sm"
                     :placeholder="String(row.stock)"
-                  >
+                  />
                   <button
                     class="p-2 bg-stone-800 text-white rounded-lg hover:bg-stone-700 transition-colors"
                     title="Mettre à jour"
                     @click="updateStock(row)"
                   >
-                    <i class="ph ph-arrows-clockwise"/>
+                    <i class="ph ph-arrows-clockwise" />
                   </button>
                 </div>
               </td>
@@ -114,7 +118,8 @@ async function loadChart(): Promise<void> {
   if (!import.meta.client) return
 
   const { Bar: BarComponent } = await import('vue-chartjs')
-  const { Chart, Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale } = await import('chart.js')
+  const { Chart, Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale } =
+    await import('chart.js')
 
   Chart.register(Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale)
   Bar = BarComponent
@@ -133,9 +138,7 @@ async function loadData(): Promise<void> {
   orders.value = fetchedOrders
 }
 
-const recentOrders = computed(() =>
-  [...orders.value].sort((a, b) => b.id - a.id).slice(0, 5),
-)
+const recentOrders = computed(() => [...orders.value].sort((a, b) => b.id - a.id).slice(0, 5))
 
 const chartData = computed((): ChartData<'bar'> => {
   const salesByDate: Record<string, number> = {}

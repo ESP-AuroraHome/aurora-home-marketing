@@ -14,7 +14,6 @@ export default defineConfig({
       reporter: ['text', 'json-summary', 'json'],
       reportsDirectory: './coverage',
       reportOnFailure: true,
-      all: true,
       include: ['stores/**/*.ts', 'components/**/*.vue'],
       exclude: ['tests/**', '**/*.test.ts', 'node_modules/**', '.nuxt/**', '**/*.client.vue'],
       thresholds: {

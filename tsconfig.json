@@ -5,5 +5,6 @@
     "noImplicitAny": true,
     "strictNullChecks": true,
     "noUncheckedIndexedAccess": true
-  }
+  },
+  "exclude": ["tests/**"]
 }
