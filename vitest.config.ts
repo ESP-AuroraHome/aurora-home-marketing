@@ -8,7 +8,7 @@ export default defineConfig({
     globals: true,
     environment: 'happy-dom',
     setupFiles: ['./vitest.setup.ts'],
-    include: ['**/*.test.ts', '**/*.test.vue'],
+    include: ['tests/**/*.test.ts', 'tests/**/*.test.vue'],
     coverage: {
       provider: 'v8',
       reporter: ['text', 'json-summary', 'json'],
@@ -16,13 +16,7 @@ export default defineConfig({
       reportOnFailure: true,
       all: true,
       include: ['stores/**/*.ts', 'components/**/*.vue'],
-      exclude: [
-        '**/__tests__/**',
-        '**/*.test.ts',
-        'node_modules/**',
-        '.nuxt/**',
-        '**/*.client.vue',
-      ],
+      exclude: ['tests/**', '**/*.test.ts', 'node_modules/**', '.nuxt/**', '**/*.client.vue'],
       thresholds: {
         lines: 70,
         statements: 70,

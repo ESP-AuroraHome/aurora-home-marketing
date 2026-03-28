@@ -11,7 +11,7 @@ import type {
   UpdateStockBody,
   PaymentIntentResponse,
   SuccessResponse,
-} from '../types/index'
+} from '../../shared/types/index'
 
 describe('shared types', () => {
   it('Product has correct shape', () => {

@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import { mount } from '@vue/test-utils'
-import LiquidGlass from '../LiquidGlass.vue'
+import LiquidGlass from '../../components/LiquidGlass.vue'
 
 describe('LiquidGlass', () => {
   it('renders a wrapper div', () => {

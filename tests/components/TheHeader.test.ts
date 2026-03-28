@@ -2,7 +2,7 @@ import { describe, it, expect, vi, beforeEach } from 'vitest'
 import { mount } from '@vue/test-utils'
 import { setActivePinia, createPinia } from 'pinia'
 import { ref, computed } from 'vue'
-import TheHeader from '../TheHeader.vue'
+import TheHeader from '../../components/TheHeader.vue'
 
 const mockPush = vi.fn()
 

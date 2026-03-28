@@ -1,6 +1,6 @@
 import { describe, it, expect, vi } from 'vitest'
 import { mount } from '@vue/test-utils'
-import TheFooter from '../TheFooter.vue'
+import TheFooter from '../../components/TheFooter.vue'
 
 vi.mock('#app', () => ({}), { virtual: true })
 
