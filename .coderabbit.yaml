@@ -15,7 +15,7 @@ reviews:
     - "!aurora.db"
   path_instructions:
     - path: "**/*.test.ts"
-      instructions: "Check that mocks are realistic, edge cases are covered, and no implementation details leak into tests."
+      instructions: "Check that mocks are realistic, edge cases are covered, no implementation details leak into tests, and coverage thresholds are respected."
     - path: "components/**/*.vue"
       instructions: "Check accessibility (aria, role), loading/error state handling, and that props are properly typed."
     - path: "server/api/**/*.ts"
